@@ -22,17 +22,41 @@
 
 
 /* General Flex Styles */
+body{
+   display: flex;
+   display: -webkit-flex;
+   -webkit-box-flex: row wrap;
+   flex-flow: row wrap;
+}
 
-
-
-
-
-
+section#left{
+   flex: 1 8 130px;
+}
+section#right{
+   flex: 8 1 351px;
+}
+section.tips{
+   display: flex;
+   -webkit-flex: row wrap;
+   flex: row wrap;
+}
+article{
+   flex: 2 1 351px;
+}
+aside{
+   flex: 1 2 250px;
+}
+ul{
+   display: flex;
+   flex: column;
+}
 /* ===============================
 	Mobile Devices: 0 to 480px 
    ===============================
 */
-	
+@media only screen and (max-width: 480px){
+
+}
 
 
 
@@ -41,6 +65,8 @@
 	Tablet and Desktop Devices: 481px or more 
    ============================================
 */
+@media only screen and (min-width: 481px){
 
+}
 
 
